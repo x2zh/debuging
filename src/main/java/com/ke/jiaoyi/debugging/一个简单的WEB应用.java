@@ -21,6 +21,19 @@ import org.springframework.web.bind.annotation.RestController;
 @SuppressWarnings("NonAsciiCharacters")
 @SpringBootApplication
 public class 一个简单的WEB应用 {
+
+    /**
+     * <div style="font-size: 30;background:#f9f9f9">
+     * <div style="font-size: 45;">WEB应用远程调试 🤛</div><br>
+     * <ul>
+     * <li>IDEA Remote Debug Configuration</li>
+     * <li>远程JVM进程需要使用合适的参数来启用远程debug</li>
+     * </ul>
+     * </div>
+     */
+    int 不止是多线程哦;
+
+
     public static void main(String[] args) {
         SpringApplication.run(一个简单的WEB应用.class);
     }

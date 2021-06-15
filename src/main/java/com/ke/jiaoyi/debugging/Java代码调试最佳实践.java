@@ -122,11 +122,9 @@ public class Java代码调试最佳实践 {
      *     <li>挂起/恢复</li>
      *     <li>设置断点/关闭断点/取消断点</li>
      *     <li>单步调试：step over/into/out</li>
-     *     <li>栈帧</li>
      *     <li>变量: 内联、变量表、修改</li>
      *     <li>表达式求值：quick evaluate、求值对话框</li>
      *     <li>watches</li>
-     *     <li>条件断点</li>
      * </ul>
      */
     public static class 代码调试的基本方法 {
