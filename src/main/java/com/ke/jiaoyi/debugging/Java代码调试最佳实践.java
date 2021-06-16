@@ -165,41 +165,17 @@ public class Java代码调试最佳实践 {
 
 
     /**
-     * <div style="font-size: 30;background:#f9f9f9"><div style="font-size: 35;">单步调试高级技巧</div>
+     * <div style="font-size: 30;background:#f9f9f9"><div style="font-size: 35;">修改程序的执行流程</div>
      * <br><ul>
+     * <li>修改变量</li>
      * <li>丢弃栈帧(Drop frame)</li>
      * <li>&#128142 强制返回(Force return)</li>
      * <li>&#128142 抛出异常(Throw exception)</li>
+     * <li>热更新代码</li>
      * </ul>
+     * @see 改变程序的执行流 改变程序的执行流;
      */
-    public static class 你真的会单步调试的技巧吗 {
-        public static void main(String[] args) throws IOException {
-            for (int i = 0; i < 100; i++) {
-                try {
-                    if (filter(i)) {
-                        process(i);
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-        private static boolean filter(int read) {
-            return read != '\n' && read != 'a';
-        }
-
-        private static void process(int arg) {
-            int res = arg * 2;
-            res += 4;
-            if (res > 1) {
-                res = Math.max(10, res);
-            }
-            if (Math.max(res, 90) % 2 == 0) {
-                System.out.println("!");
-            }
-        }
-    }
+    float 你真的会单步调试的技巧吗;
 
 
 
