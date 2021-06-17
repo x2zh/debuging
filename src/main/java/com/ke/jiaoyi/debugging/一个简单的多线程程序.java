@@ -30,8 +30,50 @@ import java.util.concurrent.Future;
  * <li>断点挂起当前线程</li>
  * </ul>
  */
-@SuppressWarnings("NonAsciiCharacters")
+@SuppressWarnings("all")
 public class 一个简单的多线程程序 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * <div style="font-size: 30;background:#f9f9f9">
+     * <div style="font-size: 45;">分析JVM堆中的对象 🤛</div><br>
+     * <ul>
+     * <li>开启 Memory Tab 页</li>
+     * <li>load class</li>
+     * <li>查看指定类的实例个数</li>
+     * </ul>
+     */
+    int 查看堆中的对象;
+
+
+
+
+
+
+
+
+
+
+
+
+
     static class LazyNonDoubleCheckSingleton {
 
         private LazyNonDoubleCheckSingleton() {
@@ -57,7 +99,6 @@ public class 一个简单的多线程程序 {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
-
         Runnable r = () -> {
             LazyNonDoubleCheckSingleton instance = LazyNonDoubleCheckSingleton.getInstance();
             instance.greet();
